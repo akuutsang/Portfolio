@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-.hero {
-  background-color: antiquewhite;
-}
 
+.hero {
+  background-image: url(../Top-CapeStone-Project/assets/background.jpg);
+}
