@@ -9,7 +9,7 @@
 
 .hero{
   position: relative;
-  
+ 
 }
 .nav{
   background-color: black;
@@ -42,7 +42,6 @@
   font-size: larger;
 }
 span{
-
   color: rgba(197, 12, 114, 0.605);
   font-size: xx-large;
   font-weight: bolder;
@@ -56,7 +55,7 @@ span{
   }
 
 .main{
-  border: 0px;
+  /* border: 0px; */
   height: 100vh;
   background-size: cover;
   background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg);
@@ -64,12 +63,11 @@ span{
 
 .display{
     text-align: center; 
-    border: 6px solid black;
     height: 150px;
     justify-items: center;
     border: 50px;
     padding: 50px;
-    margin: 50px;
+    /* margin: 50px; */
     
 
 }
