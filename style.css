@@ -8,6 +8,7 @@
 }
 
 .hero {
+<<<<<<< HEAD
   background-color: black;   
 }
 
@@ -74,3 +75,7 @@ span{
   background-color: aqua;
 }
 
+=======
+  background-image: url(../Top-CapeStone-Project/assets/background.jpg);
+}
+>>>>>>> 44976f42164e18e6f72116a3873b3382075897ab
