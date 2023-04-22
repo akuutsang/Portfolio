@@ -1,5 +1,5 @@
 * {
-  color: white;
+    color: white;
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans',sans-serif;
@@ -7,12 +7,8 @@
     /* background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg); */
 }
 
-.hero {
-<<<<<<< HEAD
-  background-color: black;   
-}
-
 .nav{
+  background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -20,15 +16,15 @@
   height:  8vh; 
 }
 .home{
-  padding: 20px; 
+  padding: 15px; 
    
 } 
 .about{
-  padding: 20px;
+  padding: 15px;
   
 }
 .contact{
-  padding: 20px;
+  padding: 15px;
 }
 
 .info{
@@ -50,7 +46,7 @@ span{
 
 .main{
 
-  /* height: 100vh; */
+  height: 100vh;
   background-image: url(/assets/water.jpg);
   background-size: cover;
 
@@ -74,8 +70,3 @@ span{
   color: rgba(2, 9, 4, 0.913);
   background-color: aqua;
 }
-
-=======
-  background-image: url(../Top-CapeStone-Project/assets/background.jpg);
-}
->>>>>>> 44976f42164e18e6f72116a3873b3382075897ab
