@@ -1,8 +1,76 @@
 * {
-  margin: 0;
-  padding: 0;
+  color: white;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+    /* background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg); */
 }
 
 .hero {
-  background-image: url(../Top-CapeStone-Project/assets/background.jpg);
+  background-color: black;   
 }
+
+.nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height:  8vh; 
+}
+.home{
+  padding: 20px; 
+   
+} 
+.about{
+  padding: 20px;
+  
+}
+.contact{
+  padding: 20px;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  color: white;
+  font-size: larger;
+}
+span{
+  color: rgba(197, 12, 114, 0.605);
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 4px;
+  font-style: italic;
+}
+
+.main{
+
+  /* height: 100vh; */
+  background-image: url(/assets/water.jpg);
+  background-size: cover;
+
+}
+
+.main .display{
+
+  /* /* background-color: black; */
+   text-align: center; 
+  /* /* justify-content: center; */
+  /* padding: 100px;  */
+  /* margin-top: 50px ; */
+  /* border: 2px solid white; */  */
+
+}
+.intro{
+  font-size: 70px;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(2, 9, 4, 0.913);
+  background-color: aqua;
+}
+
