@@ -5,9 +5,12 @@
     font-family: 'Josefin Sans',sans-serif;
     box-sizing: border-box;
     /* background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg); */
+  }
+
+.hero{
+  position: relative;
+  
 }
-
-
 .nav{
   background-color: black;
   display: flex;
@@ -15,6 +18,7 @@
   align-items: center;
   justify-content: space-between;
   height:  8vh; 
+  border: 0px;
 }
 .home{
   padding: 15px; 
@@ -52,27 +56,36 @@ span{
   }
 
 .main{
-
+  border: 0px;
   height: 100vh;
   background-size: cover;
   background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg);
-
 }
 
-.main .display{
+.display{
     text-align: center; 
     border: 6px solid black;
-    width: 400px;
-    height: 333px;
-    margin: 60px;
+    height: 150px;
+    justify-items: center;
+    border: 50px;
+    padding: 50px;
+    margin: 50px;
     
 
 }
+marquee{
+  color: rgba(197, 12, 114, 0.605);
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 4px;
+  font-style: italic;
+}
 .intro{
+  align-content: center;
   background-color: white;
   color: black;
   font-size: 70px;
   font-weight: bolder;
   font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
-}
+  font-family: 'Times New Roman', Times, serif; 
+} 
