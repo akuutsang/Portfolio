@@ -68,8 +68,18 @@ span{
     border: 50px;
     padding: 50px;
     /* margin: 50px; */
-    
-
+}
+.hour{
+  color: antiquewhite;
+  font-size: large;
+}
+.minute{
+  color: antiquewhite;
+  font-size: large;
+}
+.second{
+  color: antiquewhite;
+  font-size: large;
 }
 marquee{
   color: rgba(197, 12, 114, 0.605);
