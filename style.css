@@ -4,43 +4,63 @@
     margin: 0;
     font-family: 'Josefin Sans',sans-serif;
     box-sizing: border-box;
-    /* background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg); */
   }
 
 .hero{
-  position: relative;
- 
-}
-.nav{
   background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height:  8vh; 
+  height:  15vh; 
   border: 0px;
 }
-.home{
-  padding: 15px; 
-   
+
+.top{
+display: flex;
+flex-direction: column;
+animation: movedown 1s linear 1;
+animation-delay: 1s;
+visibility: hidden;
+animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+.logo{
+  font-size: larger;
+  color: white;
+  cursor: pointer;
+}
+ 
+.info a{
+  padding: 4px; 
+  list-style: none;
+  text-decoration-line: none;
+  animation: movedown 1s linear 1;
+  animation-delay: 3s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
 } 
-.about{
-  padding: 15px;
-  
+.info li{
+  list-style: none;
 }
-.contact{
-  padding: 15px;
-}
+
 
 .info{
   display: flex;
   flex-direction: row;
 }
 
-.logo{
-  color: white;
-  font-size: larger;
-}
 span{
   color: rgba(197, 12, 114, 0.605);
   font-size: xx-large;
@@ -54,12 +74,6 @@ span{
   text-decoration: underline;
   }
 
-.main{
-  /* border: 0px; */
-  height: 100vh;
-  background-size: cover;
-  background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg);
-}
 
 .display{
     text-align: center; 
@@ -81,19 +95,42 @@ span{
   color: antiquewhite;
   font-size: large;
 }
-marquee{
+
+.welcome{
   color: rgba(197, 12, 114, 0.605);
-  font-size: xx-large;
-  font-weight: bolder;
-  padding: 4px;
-  font-style: italic;
+  font-family:Instrument Serif
+  ;
 }
+
 .intro{
   align-content: center;
   background-color: white;
   color: black;
+  border: 4px solid black;
   font-size: 70px;
   font-weight: bolder;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif; 
 } 
+
+
+.main{
+  border: 0px;
+  height: 100vh;
+  background-size: cover;
+  animation: moveright 1s linear 1;
+  animation-delay: 4s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveright{
+  0%{
+    transform: translatex(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translatex(0px);
+    visibility: visible;
+  }
+}
