@@ -1,0 +1,94 @@
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans',sans-serif;
+  box-sizing: border-box;
+}
+
+#hero{
+background-color: black;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+height:  15vh; 
+border: 0px;
+}
+
+.top{
+  display: flex;
+  flex-direction: column;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  }
+ 
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+.logo{
+  font-size: larger;
+  color: white;
+  cursor: pointer;
+}
+ 
+span{
+  color: rgb(4, 93, 4);
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 4px;
+  font-style: italic;
+}
+
+.double-underline {
+  border-bottom: 1px solid;
+  text-decoration: underline;
+  }
+
+  .info a{
+    padding: 4px; 
+    list-style: none;
+    text-decoration-line: none;
+    animation: movedown 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+  } 
+
+  .info li{
+    list-style: none;
+  }
+  
+  .info{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about{
+    color: #000;
+    width: 1130px;
+    background-image: url(/assets/pexels-karolina-grabowska-4497759.jpg);
+    background-repeat: no-repeat; 
+    text-align: center;
+    justify-self:center ;
+  }
+
+  .text{
+    color: #000;
+    width: 500px; 
+   height: 70vh;
+   justify-self:center ;
+   /* width: 200px; */
+   /* margin: 20px 50px 50px 0; */
+   
+  }

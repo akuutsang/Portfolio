@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
-  <title>Akutsang's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+    <title>Akutsang's Portfolio</title>
 </head>
 <body>
-    <!-- hero  -->
-    <div class="hero">
-        <div class="top">
-            <div class="clock">
-                <span class="hour"></span>:<span class="minute"></span>:<span class="second">:</span>
-              </div> 
-          <h2 class="logo"><span class="double-underline">My</span> Portfo<span>lio</span></h2>
-        </div>        
-        <ul class="info">
-            <li class="home"><a href="#">Home</a></li>
-            <li class="about"><a href="#">About</a></li>
-            <li class="contact"><a href="#">Contact Us</a></li>
-        </ul> 
-    </div>  
-    <!-- main -->
-    <section class="main">
-      <div class="display">
-        <div class="intro"> <span class="welcome"> Hello there!</span><br> Welcome to my safe space<br></div>
-        <div class="text">
-        </div>
+  <!-- header -->
+  <input type="checkbox" id="toggle">
+    <nav>
+        <div class="clock">
+            <span class="hour"></span>:<span class="minute"></span>:<span class="second">:</span>
       </div>
-    </section>
-    <!-- About -->
-    <section class="about">
+        <a class="navbar-brand"><span style="color: red; font-size:50px; font-family: Instrument Serif; text-decoration:underline" >
+            My</span> Portfo<span style="color: red; font-family: Instrument Serif;">lio</span>
+        </a> 
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </label>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
-    </section>
-    <!-- contact us -->
-    <section class="contact">
+  <!-- main -->
+  <section></section>
 
-    </section>
-    
-    <footer class="footer">
-
-    </footer>
-  <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

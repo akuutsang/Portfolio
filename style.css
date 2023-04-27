@@ -1,139 +1,121 @@
-* {
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-family: 'Josefin Sans',sans-serif;
-    box-sizing: border-box;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration:none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
-.hero{
-  background-color: black;
+
+nav{
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-  height:  15vh; 
-  border: 0px;
+  padding: 0 15%;
+  height: 75px;
+  line-height: 75px;
+  background: #404040; ;
 }
 
-.top{
-display: flex;
-flex-direction: column;
-animation: movedown 1s linear 1;
-animation-delay: 1s;
-visibility: hidden;
-animation-fill-mode: forwards;
+nav .navbar-brand{
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: .5px;
 }
 
-@keyframes movedown{
-  0%{
-    transform: translateY(-100px);
-    visibility: visible;
+nav .nav-list{
+  display: flex;
+}
+
+nav .nav-list .nav-item{
+  cursor: pointer;
+  height: 100%;
+  padding: 0 30px;
+  transition: .4s;
+}
+
+nav .nav-list .nav-item:hover{
+  background-color: cornflowerblue;
+
+}
+
+nav .nav-list .nav-link{
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 935px){ 
+  nav{
+      padding: 0 2rem;
   }
-  100%{
-    transform: translateY(0px);
-    visibility: visible;
+
+  nav .nav-list .nav-item{
+      padding: 0 20px;
   }
 }
 
-.logo{
-  font-size: larger;
-  color: white;
+@media (max-width: 675px){ 
+  nav .nav-list{
+      display: grid;
+      position: absolute;
+      background:#404040 ;
+      width: 100%;
+      top: 75px;
+      left: 0;
+      transform: translateY(-100%);
+      z-index: -1;
+      transition: .6s;
+  }
+
+  nav .nav-list .nav-item{
+      padding-left: 35px;
+  }
+
+  nav .navbar-toggler{
+      display: grid !important;
+      height: min-content;
+  }
+}
+
+nav .navbar-toggler{
+  display: none;
+  height: none;
+  margin: 18px -10px 0 0;
   cursor: pointer;
 }
- 
-.info a{
-  padding: 4px; 
-  list-style: none;
-  text-decoration-line: none;
-  animation: movedown 1s linear 1;
-  animation-delay: 3s;
-  visibility: hidden;
-  animation-fill-mode: forwards;
-} 
-.info li{
-  list-style: none;
+
+nav .navbar-toggler .bar{
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: .4s; 
 }
 
-
-.info{
-  display: flex;
-  flex-direction: row;
+input {
+  display: none;
 }
 
-span{
-  color: rgba(197, 12, 114, 0.605);
-  font-size: xx-large;
-  font-weight: bolder;
-  padding: 4px;
-  font-style: italic;
+input:checked ~ nav .nav-list{
+  transform: translate(0);
 }
 
-.double-underline {
-  border-bottom: 1px solid;
-  text-decoration: underline;
-  }
-
-
-.display{
-    text-align: center; 
-    height: 150px;
-    justify-items: center;
-    border: 50px;
-    padding: 50px;
-    /* margin: 50px; */
-}
-.hour{
-  color: antiquewhite;
-  font-size: large;
-}
-.minute{
-  color: antiquewhite;
-  font-size: large;
-}
-.second{
-  color: antiquewhite;
-  font-size: large;
+input:checked ~ nav .navbar-toggler{
+ margin-top: 35%;
 }
 
-.welcome{
-  color: rgba(197, 12, 114, 0.605);
-  font-family:Instrument Serif
-  ;
+input:checked ~ nav .navbar-toggler .bar:nth-child(1){
+  position: absolute;
+  transform: rotate(45deg);
 }
 
-.intro{
-  align-content: center;
-  background-color: white;
-  color: black;
-  border-left: 4px solid black;
-  border-bottom: 4px solid black;
-  border-radius: 15px;
-  font-size: 70px;
-  font-weight: bolder;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif; 
-} 
-
-
-.main{
-  border: 0px;
-  height: 100vh;
-  background-size: cover;
-  animation: moveright 1s linear 1;
-  animation-delay: 4s;
-  visibility: hidden;
-  animation-fill-mode: forwards;
-  background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg);
+input:checked ~ nav .navbar-toggler .bar:nth-child(2){
+  display: none;
 }
 
-@keyframes moveright{
-  0%{
-    transform: translatex(-100px);
-    visibility: visible;
-  }
-  100%{
-    transform: translatex(0px);
-    visibility: visible;
-  }
-}
+input:checked ~ nav .navbar-toggler .bar:nth-child(3){
+  transform: rotate(-45deg);
+}   
