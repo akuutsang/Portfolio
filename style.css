@@ -7,7 +7,10 @@
   text-decoration:none;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+.digital-clock{
+  background-color: #100101;
+  color: white;
+}
 
 nav{
   display: flex;
@@ -15,7 +18,7 @@ nav{
   padding: 0 15%;
   height: 75px;
   line-height: 75px;
-  background: #404040; ;
+  background: #100101; ;
 }
 
 nav .navbar-brand{
@@ -101,11 +104,7 @@ input {
 
 input:checked ~ nav .nav-list{
   transform: translate(0);
-}
-
-input:checked ~ nav .navbar-toggler{
- margin-top: 35%;
-}
+}  
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(1){
   position: absolute;
@@ -119,3 +118,26 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(2){
 input:checked ~ nav .navbar-toggler .bar:nth-child(3){
   transform: rotate(-45deg);
 }   
+
+.main{
+  width: auto;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(/assets/pexels-mikhail-nilov-7828670.jpg);
+  background-color: white;
+}
+
+h3{
+  background-color: white;
+  width: 280px;
+  height: 160px;
+  /* margin-top: 20px; */
+  text-align: center;
+  padding-top: 130px;
+  border: 2px solid;
+  border-radius: 200px;
+  
+  
+}
+ 
