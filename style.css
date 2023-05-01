@@ -126,19 +126,27 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3){
   height: 80vh;
   display: flex;
   justify-content: center;
-  background-image: url(/assets/pexels-mikhail-nilov-7828670.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-h3{
-  background-color: white;
-  width: 280px;
-  height: 160px;
+
+h1{ 
+  color: black;
+  width: 700px;
+  height: 300px;
   text-align: center;
   padding-top: 130px;
-  border: 2px solid;
-  border-radius: 200px;
+  font-size: 30px;
+} 
 
+.span{
+  font-size: 80px; 
+  background-image: url(/assets/pexels-karolina-grabowska-4226881.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
 }
  
