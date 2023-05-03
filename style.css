@@ -25,6 +25,21 @@ nav .navbar-brand{
   color: #ffffff;
   font-size: 28px;
   letter-spacing: .5px;
+  animation: movedown 1s linear 1;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+  0%{
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+  100%{
+    transform: translateY(0px);
+    visibility: visible;
+  }
 }
 
 nav .nav-list{
@@ -81,6 +96,7 @@ nav .nav-list .nav-link{
       display: grid !important;
       height: min-content;
   }
+  
 }
 
 nav .navbar-toggler{
@@ -138,6 +154,9 @@ h1{
   text-align: center;
   padding-top: 130px;
   font-size: 30px;
+  border: 3px solid black;
+  border-top-left-radius: 30px ;
+  border-bottom-right-radius : 30px;
 } 
 
 .span{
@@ -147,6 +166,5 @@ h1{
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent;  
 }
- 

@@ -4,47 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
     <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/hand-wave?f=classic&s=regular">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About</title>
 </head>
 <body>
-    <div class="image">
-        <img src="/assets/" alt="">
-    </div>
-    <div id="hero">
-        <div class="top">
-            <div class="clock">
-                <span class="hour"></span>:<span class="minute"></span>:<span class="second">:</span>
-              </div> 
-          <h2 class="logo"><span class="double-underline">My</span> Portfo<span>lio</span></h2>
-        </div>        
-        <ul class="info">
-            <li class="home"><a href="/index.html">Home</a></li>
-            <li class="about"><a href="/about.html">About</a></li>
-            <li class="contact"><a href="#">Contact Us</a></li>
-        </ul> 
-    </div>  
+  <!-- header -->
+  <div class="digital-clock">
+    <span class="hour"></span>:<span class="minute"></span>:<span class="second">:</span>
+  </div>
+  <input type="checkbox" id="toggle">
+    <nav>
+        <a class="navbar-brand"><span style="color: red; font-size:50px; font-family: Instrument Serif; text-decoration:underline" href="/index.html" >
+            My</span> Portfo<span style="color: red; font-family: Instrument Serif;">lio</span>
+        </a> 
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span> 
+            <span class="bar"></span>
+            <span class="bar"></span> 
+        </label>
+        
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- about section -->
     <div id="about">
         <!-- <img src="/assets/content.JPG" alt=""> -->
-        <div class="text">  
-            <h2>About Me </h2>
-            <h5>Developer & Designer</h5>
-            <p>I am a front-end developer, I enjoy creating pixel perfect designs
-                with a user friendly interface and web animations, I can provide clean code
-                and make the website more interactive ensuring user
-                functionality with responsive design on any type of device.
-            </p>
-
-            <button type="button">Let's Talk</button>
+        <div class="container">
+            <div class="wrapper">
+                <div class="text">
+                    <h2>About Me </h2>
+                    <h5>Developer & Designer</h5>
+                    <p>I am a front-end developer, I enjoy creating pixel perfect designs
+                        with a user friendly interface and web animations, I can provide clean code
+                        and make the website more interactive ensuring user
+                        functionality with responsive design on any type of device.
+                    </p>
+                    <button type="button">Let's Talk</button>
+                  </div> 
+                  <div class="box-one">
+                    <img src="/assets/" alt="">
+                  </div>
+                  <div class="box-two"></div>
+            </div>
         </div>
-        <div class="projects">
-            <header>previous works</header>
-        
-        </div>
-
-
-
     <script src="/script.js"></script>
     
 </body>
