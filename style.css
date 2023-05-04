@@ -5,7 +5,7 @@
   outline: 0;
   list-style: none;
   text-decoration:none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 .digital-clock{
   background-color: #100101;
@@ -97,6 +97,19 @@ nav .nav-list .nav-link{
       display: grid !important;
       height: min-content;
   }
+
+  .main{
+    display: flex;
+    flex-direction: row;
+    height: 200vh;
+  }
+  .projects{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxes{
+  }
   
 }
 
@@ -138,6 +151,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3){
 }   
 
 .main{
+  border-bottom: 5px solid black;
   background-color: white;
   color: #100101;
   padding-top: 100px;
@@ -171,7 +185,7 @@ h1{
   color: transparent;  
 }
 
-.container{
+/* .container{
     position: relative;
 	  background-position: center;
     background-repeat: no-repeat;
@@ -179,27 +193,61 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-  } 
-  
+    background-color: aqua;
+  }  */
+
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 5px solid black;
+}
+
 .text{
-  border: 3px solid black;
-  width: 90vw;
+  width: 80vw;
   text-align: center;
-  padding: 30px;
-  font-family: lato;
+  padding: 80px;
+  border-left: 50px;
+  font-family: montserrat;
+}
+button{
+  background-color: antiquewhite;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+.projects{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
 .boxes{
   display: flex;
   width: 100vw;
-  height:70vh ;
+  height:100vh ;
+  justify-content: center;
   align-items: center;
 }
 
+
+.items{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
 .pro-image{
-  width: 250px;
-  height: 250px;
-  padding: 10px;
+  width: 180px;
+  height: 100px;
 }
 
 
@@ -208,38 +256,4 @@ h1{
 
 
 
-  /* .wrapper{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    color: black;
-    width: 70%;
-    height: 70%;
-	  font-size: 25px;
-        
-  }
-
-  /* .text{ 
-    color: black;
-    width: 30vw;
-    height: 50vh;
-    text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
-
-   .box-one{
-    color: #100101;
-    width: 30vw;
-    height: 50vh;
-    justify-content: center;
-     padding: 50px; 
-  }
-  .box-two{
-    color: #100101;
-    width: 30vw;
-    height:50vh;
-    justify-content: center;
-     padding: 50px; 
-  } */
   
