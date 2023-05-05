@@ -52,7 +52,7 @@ const data = [
       <img class="pro-image" src="${data[i].image}" alt="">
       <div class="description">
           <h3>${data[i].name}</h3>
-          <a href="${data[i].link}">readmore</a>    
+          <a href="${data[i].link}">view</a>    
       </div>
     </div>
       `;

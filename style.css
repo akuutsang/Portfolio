@@ -76,6 +76,14 @@ nav .nav-list .nav-link{
   }
 }
 
+@media (min-width: 676px){ 
+  .grid-btn{
+    visibility: hidden;
+    
+  }
+
+}
+
 @media (max-width: 675px){ 
   nav .nav-list{
       display: grid;
@@ -108,9 +116,14 @@ nav .nav-list .nav-link{
     flex-direction: column;
   }
 
-  .boxes{
+  .grid-btn{
+    color: white;
+    background-color: rgb(77, 77, 245);
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    
   }
-  
 }
 
 nav .navbar-toggler{
@@ -185,16 +198,6 @@ h1{
   color: transparent;  
 }
 
-/* .container{
-    position: relative;
-	  background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aqua;
-  }  */
 
 .about{
   display: flex;
@@ -210,8 +213,15 @@ h1{
   border-left: 50px;
   font-family: montserrat;
 }
-button{
-  background-color: antiquewhite;
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.grid-btn{
+  color: white;
+  background-color: rgb(77, 77, 245);
   width: 70px;
   height: 30px;
   border-radius: 10px;
@@ -249,6 +259,10 @@ button{
   width: 180px;
   height: 100px;
 }
+
+
+
+
 
 
 
