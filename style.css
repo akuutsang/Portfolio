@@ -65,7 +65,7 @@ nav .nav-list .nav-link{
   font-weight: 500;
 }
 
-@media (max-width: 935px){ 
+@media (min-width: 676px){ 
   nav{
       padding: 0 2rem;
   }
@@ -74,12 +74,18 @@ nav .nav-list .nav-link{
   nav .nav-list .nav-item{
       padding: 0 20px;
   }
-}
+  .display{
+    height: 60vh;
+  }
+  .title{
+    padding: 40px;
+  }
+  .boxes{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    border: 3px solid black;
 
-@media (min-width: 676px){ 
-  .grid-btn{
-    visibility: hidden;
-    
   }
 
 }
@@ -116,14 +122,18 @@ nav .nav-list .nav-link{
     flex-direction: column;
   }
 
-  .grid-btn{
-    color: white;
-    background-color: rgb(77, 77, 245);
-    width: 70px;
-    height: 30px;
-    border-radius: 10px;
-    
+  .display{
+    height: 120vh;
   }
+
+  .boxes{
+    display: flex;
+    width: 100vw;
+    height:100vh ;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 nav .navbar-toggler{
@@ -165,7 +175,6 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3){
 
 .main{
   border-bottom: 5px solid black;
-  background-color: white;
   color: #100101;
   padding-top: 100px;
   width: auto;
@@ -198,6 +207,16 @@ h1{
   color: transparent;  
 }
 
+/* .container{
+    position: relative;
+	  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+  }  */
 
 .about{
   display: flex;
@@ -213,13 +232,7 @@ h1{
   border-left: 50px;
   font-family: montserrat;
 }
-
-.btn{
-  display: flex;
-  justify-content: center;
-}
-
-.grid-btn{
+button{
   color: white;
   background-color: rgb(77, 77, 245);
   width: 70px;
@@ -240,13 +253,13 @@ h1{
   display: flex;
 }
 
-.boxes{
+/* .boxes{
   display: flex;
   width: 100vw;
   height:100vh ;
   justify-content: center;
   align-items: center;
-}
+} */
 
 
 .items{
@@ -259,10 +272,6 @@ h1{
   width: 180px;
   height: 100px;
 }
-
-
-
-
 
 
 
